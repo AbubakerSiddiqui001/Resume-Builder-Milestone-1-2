@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000a6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+.card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 6px solid #212121;
+  
+}
+.name {
+  font-size: 2.5rem;
+  color: #333;
+  font-family: "Poppins" , sans-serif;
+  font-weight: 700;
+}
+.name span {
+  color: #da6d41;
+}
+.contact {
+  font-family: "Poppins" , sans-serif;
+  font-size: 1rem;
+  color: #777;
+  padding-top: 5px;
+}
+.section-title {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Poppins" , sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.education {
+  font-family: "Poppins" , sans-serif;
+  margin-top: 12px;
+  font-size: 15px;
+  color: #777;
+}
+.skills-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: "Poppins" , sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.skills-list li {
+  color: #777;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.title {
+  font-family: "Poppins" , sans-serif;
+  font-size: 16px;
+  color: #777;
+  line-height: 30px;
+}
+.personal-info {
+  font-family: "Poppins" , sans-serif;
+  font-size: 16px;
+  color: #777;
+  line-height: 30px;
+}
+.toggle-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.toggle-button:hover {
+  background-color: #777;
+  color: #fff;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .contact {
+    font-size: 0.7rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .toggle-button {
+    font-size: 1rem;
+  }
+}
